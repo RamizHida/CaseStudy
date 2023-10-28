@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Case Study: MyFlix Movie Web App</h1>
+    </div>
+    <div class="intro-container">
+      <div>
+        <h2>Summary</h2>
+        <p>
+          MyFlix is a web application, built with the MERN stack, that allows
+          its visitors to quickly skim information about movies and directors.
+          Visitors can sign up, create a list of their favorite movies, and
+          delete their account at any time.
+        </p>
+      </div>
+      <div>
+        <h2>Purpose</h2>
+        <p>
+          MyFlix was one of several projects from my FullStack Web Development
+          course, CareerFoundry. MyFlix is meant to demonstrate my Javascript
+          knowledge, from Frontend to Backend.
+        </p>
+      </div>
+      <div>
+        <h2>Goal</h2>
+        <p>
+          The goal of MyFlix was to learn how to develop a FullStack web
+          application. The problem that I wanted to solve was to connect the
+          client-side with the server-side to produce a fully functioning web
+          application.
+        </p>
+      </div>
+    </div>
+    <div>
+      <img
+        id="main-view-img"
+        src="./img/beginingIMG.png"
+        alt="main view of MyFlix"
+      />
+    </div>
+    <div class="project-details-container">
+      <div>
+        <h2>Project Details</h2>
+      </div>
+      <div class="sides-container">
+        <div class="server-side-container">
+          <div class="server-item1">
+            <h2>Server-Side</h2>
+            <p>
+              By leveraging my javascript skills, I was able to use NodeJS with
+              Express, to communicate with a non relational database (MongoDB)
+              to develop a REST API. My Flix’s API can be accessed by way of
+              HTTP methods, such as GET, POST, and DELETE. CRUD methods were
+              employed to both retrieve and store data in a non relational
+              manner. The movie data that was stored in the database was
+              formatted in JSON, a type of file format designed for transferring
+              data across the web. I also implemented authorization and
+              authentication using JWT. I used Postman for testing MyFlix's API.
+            </p>
+          </div>
+          <div class="server-item2">
+            <h3>API Testing</h3>
+            <img
+              src="./img/get-all-movies.png"
+              alt="API testing with Postman"
+              class="server-side-img"
+              id="server-img1"
+            />
+            <img
+              class="server-side-img"
+              id="server-img2"
+              src="./img/register-new-user.png"
+              alt="API testing with Postman"
+            />
+          </div>
+        </div>
+        <div class="client-side-container">
+          <div>
+            <h2>Client-Side</h2>
+            <p>
+              With the completion of the server-side of MyFlix, I used React to
+              build a Single Page Application (SPA). MyFlix’s user interface
+              provides many page views, including: main view (which shows all
+              available movies), a single page movie view (which shows
+              information about the chosen movie), login view, signup view,
+              favorite movie list view ,and account details view. By using React
+              Bootstrap, I was able to make the user interface responsive and
+              consistent between different page views.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./img/profileIMG.png"
+              alt="profile view of MyFlix"
+              id="client-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end-container">
+      <div>
+        <h2>What was most enjoyable?</h2>
+        <p>
+          I very much enjoyed the process of setting up and connecting to a
+          database. During API testing with Postman, it was exciting seeing
+          MyFlix’s API responding as intended.
+        </p>
+      </div>
+      <div class="live-project">
+        <h3>Live Project:</h3>
+        <a href="https://myflix-rh.netlify.app/" target="_blank"
+          ><img
+            src="./img/movie-clapper-open.png"
+            alt="MyFlix live"
+            class="icon"
+        /></a>
+      </div>
+      <div>
+        <h2>What would you do differently next time?</h2>
+        <p>
+          When I build a similar application, with both a Frontend and a
+          Backend, I would like to incorporate a relational database, such as
+          MySQL.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://github.com/RamizHida/" target="_blank">
+        <img src="./img/github.png" alt="My Github" class="icon gitcon" />
+      </a>
+      <a href="https://www.linkedin.com/in/ramiz-hida/" target="_blank">
+        <img src="./img/linkedin.png" alt="My LinkedIn" class="icon" />
+      </a>
+    </footer>
+  </body>
+</html>

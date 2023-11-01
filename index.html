@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Case Study</title>
     <link rel="stylesheet" href="./normalize.css" />
 
     <link rel="stylesheet" href="./styles.css" />
@@ -16,7 +16,11 @@
   </head>
   <body>
     <div class="title">
-      <h1>Case Study: MyFlix Movie Web App</h1>
+      <img src="./img/logo.png" alt="" />
+      <h1>MyFlix Movie Web App</h1>
+      <a href="https://ramizhida.github.io/portfolio-website/" target="_blank">
+        <h2>Portfolio</h2>
+      </a>
     </div>
     <div class="intro-container">
       <div>
@@ -64,13 +68,21 @@
             <p>
               By leveraging my javascript skills, I was able to use NodeJS with
               Express, to communicate with a non relational database (MongoDB)
-              to develop a REST API. My Flix’s API can be accessed by way of
-              HTTP methods, such as GET, POST, and DELETE. CRUD methods were
-              employed to both retrieve and store data in a non relational
-              manner. The movie data that was stored in the database was
-              formatted in JSON, a type of file format designed for transferring
-              data across the web. I also implemented authorization and
-              authentication using JWT. I used Postman for testing MyFlix's API.
+              to develop a REST API. An Application Programming Interface (API)
+              is a method in which two softwares or computer programs
+              communicate with each other. My Flix’s API can be accessed by way
+              of HTTP methods, such as GET, POST, and DELETE. CRUD methods were
+              employed to both retrieve and store user and movie data in a non
+              relational manner. The movie data that was stored in the database
+              was formatted in JSON, a type of file format designed for
+              transferring data across the web. I also implemented authorization
+              and authentication using JSON Web Token (JWT). Authentication and
+              authorization are important security processes used to protect a
+              system and its data. Authenication is the process of vertifying
+              that a user is the user they claim to be, while authorization is
+              controling what they have access to. To ensure MyFlix's API is
+              functioning as desired, I utilized Postman for testing its
+              endpoints.
             </p>
           </div>
           <div class="server-item2">
@@ -89,18 +101,31 @@
             />
           </div>
         </div>
+        <h2>Authenticating MyFlix's User</h2>
+        <div class="auth-sec">
+          <img
+            src="./img/authenticationCode.png"
+            alt="code for authenication MyFlix's Users"
+          />
+        </div>
         <div class="client-side-container">
           <div>
             <h2>Client-Side</h2>
             <p>
               With the completion of the server-side of MyFlix, I used React to
-              build a Single Page Application (SPA). MyFlix’s user interface
-              provides many page views, including: main view (which shows all
-              available movies), a single page movie view (which shows
-              information about the chosen movie), login view, signup view,
-              favorite movie list view ,and account details view. By using React
-              Bootstrap, I was able to make the user interface responsive and
-              consistent between different page views.
+              build a Single Page Application (SPA). A Single Page Application
+              (SPA) is web application that functions within a web browser and
+              loads just a single document. SPAs do not require page reload
+              during its usage. MyFlix’s user interface provides many page
+              views, including: main view (which shows all available movies), a
+              single page movie view (which shows information about the chosen
+              movie), login view, signup view, favorite movie list view ,and
+              account details view. By using React Bootstrap, I was able to make
+              the user interface responsive and consistent between different
+              page views. With the server-side code already completed, I was
+              able to connect the client side with the server-side via the Fetch
+              API, an interface allowing web browser to make HTTP requests to
+              web servers.
             </p>
           </div>
           <div>
@@ -131,6 +156,9 @@
             class="icon"
         /></a>
       </div>
+      <a href="https://github.com/RamizHida/myFlix/" target="_blank">
+        <h3 class="myFlixCode">MyFlix Source Code</h3>
+      </a>
       <div>
         <h2>What would you do differently next time?</h2>
         <p>
@@ -139,8 +167,31 @@
           MySQL.
         </p>
       </div>
+      <div>
+        <h2>Challenges</h2>
+        <p>
+          Before developing MyFlix, my natural domain was the Frontend.
+          Switching to coding a backend required a different thought process all
+          together. From setting up a server to serve resources to clients to
+          housing data in a remote database, I was in unfamiliar terrotity. I
+          particualrly struggled with implementing the feature which allows
+          users to update their user info. After long hours of debugging, the
+          problem turned out to be a refrencing issue, in which I forgot to
+          capitilize an object's property key.
+        </p>
+      </div>
+      <div>
+        <h2>Retrospect</h2>
+        <p>
+          While working on this project, I solidified my understanding of what
+          exactly is a full-stack application and what is required to build one.
+          I learned about the four layers of Web App architecture, how the type
+          of data an application is expecting affects whether a relational or
+          non-relatonal database should be used, and the importance of data
+          security.
+        </p>
+      </div>
     </div>
-
     <footer>
       <a href="https://github.com/RamizHida/" target="_blank">
         <img src="./img/github.png" alt="My Github" class="icon gitcon" />
